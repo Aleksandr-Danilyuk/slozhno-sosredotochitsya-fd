@@ -1,5 +1,207 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+html {
+  height: 100%; 
+}
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--text-font-family);
+  background-color: var(--background-color);
+  background-image: var(--page-background);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: inherit;
+  z-index: -2;
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  top: var(--site-padding);
+  right: var(--site-padding);
+  border-top: 1px solid var(--button-border-color);
+  border-right: 1px solid var(--button-border-color);
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::after  {
+  position: absolute;
+  content: "";
+  bottom: var(--site-padding);
+  left: var(--site-padding);
+  border-bottom: 1px solid var(--button-border-color);
+  border-left: 1px solid var(--button-border-color);
+  width: 25px;
+  height: 25px;
+}
+
+.bulb {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  top: var(--site-padding);
+  color: var(--button-text-color);
+}
+
+
+.bulb::after {
+  position: absolute;
+  display: inline-block;
+  top: 8px;
+  right: 9px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FF0070;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 4px 2px var(--accent-color);
+  -moz-box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header {
+  display: grid;
+ /*  position: relative; */
+  grid-template-rows: 1fr min-content 1fr; 
+  height: 100%; 
+  align-items: center;
+  justify-items: end;
+  padding: var(--site-padding);
+}
+
+.header__theme-menu-item:not(:last-child and :first-child) {
+  margin: 10px 0;
+}
+
+.header__theme-menu-button {
+  display: inline-flex;
+  color: var(--button-text-color);
+  border: 1px solid transparent;
+  background-color: transparent;
+  text-transform: lowercase;
+  width: 70px;
+  height: 26px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-border-color-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--button-border-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--button-border-color);
+}
+
+.header__title {
+  font-size: var(--site-title-size);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--site-title-color);
+  line-height: var(--site-title-line-height);
+  justify-self: start;
+}
+
+.header__аnnotation {
+  /* text-wrap: balance;  */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px var(--site-padding);
+  gap: 50px;
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: var(--section-columns); 
+  gap: 20px;
+}
+
+.content-section:last-child {
+  gap: var(--site-padding);
+}
+
+.cards__аnnotation {
+  color: var(--section-title-color);
+  font-weight: var(--title-font-weight);
+}
+
+.cards__shell {
+  display: grid;
+  grid-column: var(--cards-weight);
+  gap: 20px;
+}
+
+.card p { 
+  padding-top: 10px;
+}
+
+.card__title-decor {
+  color: var(--title-color);
+  font-weight: var(--title-font-weight);
+  background-color: var(--accent-color);
+}
+
+.card__title-decor-thin {
+  font-weight: var(--text-font-weight);
+}
+
+.card__text-decor {
+  color: var(--text-color);
+  font-weight: var(--text-font-weight);
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: var(--text-color);
+  text-shadow: 2px 1px 0 var(--accent-color)
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.link:focus-visible {
+  outline: none;
+  border: 1px solid var(--text-color);
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.footer {
+  display: grid;
+  position: relative;
+  height: 100%; 
+  align-items: center;
+  justify-items: center;
+  padding: var(--site-padding);
+}
+
+
+.footer__title {
+  font-size: var(--site-title-size);
+  text-shadow:  2px 2px 0px var(--accent-color);
+  color: var(--site-title-color);
+  line-height: var(--site-title-line-height);
 }

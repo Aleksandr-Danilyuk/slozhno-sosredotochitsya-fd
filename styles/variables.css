@@ -2,3 +2,108 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+
+
+  --background-color: #000028;
+
+  --site-padding: 10px;
+  --bulb-shift: 38px;
+
+  --accent-color: #FF0070;
+  --page-background: url('../images/cover-image-dark.png');
+
+  --text-font-family: 'IBM Plex mono', sans-serif;
+  --site-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --site-title-color: #DB00FF;
+  --title-font-weight: 700;
+  --site-title-line-height: 83%;
+
+  --button-text-color: #FF0070;
+  --button-border-color: #FF0070;
+  --button-border-color-hover: #FF007066;
+
+  --section-title-color: #FF0070;
+
+
+  --text-size: 1.125rem;
+  --text-color: #F1B2CE;
+  --text-font-weight: 400;
+  --text-line-height: 23.4px;
+  --title-color: #000028;
+  --section-columns: 1fr;
+  --cards-weight: 1fr;
+}
+
+
+
+/*
+  --background-color: #000028;
+  --accent-color: #FF0070;
+  --button-border-color-hover: #FF007066;
+  --page-background: url('../images/cover-image-dark.png');
+  --site-title-color: #DB00FF;
+  --text-color: #F1B2CE;
+
+
+  Мусор удалить
+--main-text-color: #F1B2CE;
+--main-background-color: #000028;
+--main-background-color: #000028;
+
+--main-font-family: 'Open Sans';
+  --main-text-size: clamp(0.875rem, 0.7679rem + 0.4762vw, 1.125rem);
+  --bg-color: #f2f2f2;
+  --text-color: #000;
+  --article-bg-color: #6dc1fd;
+  --author-bg-color: #1e1e1e;
+  --author-text-color: #fff;
+  --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
+  --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
+
+  font-family: IBM Plex Mono;
+font-weight: 400;
+font-size: 18px;
+line-height: 23.4px;
+letter-spacing: 0%;
+
+font-family: IBM Plex Mono;
+font-weight: 400;
+font-size: 18px;
+line-height: 23.4px;
+letter-spacing: 0%;
+
+
+#FFF1F7 белый
+#000028 чёрный
+--accent-color:
+--h1-margi
+--h2-size
+
+#F1B2CE
+ --header-bg-color: var(--violet);
+  --header-text-color: var(--white);
+
+  --hero-bg-color: var(--black);
+  --hero-text-color: var(--black);
+  --button-bg-color: var(--fuchsia);
+  --button-text-color: var(--white);
+  --hero-title-bg-color: var(--violet);
+  --hero-title-text-color: var(--white);
+  --description-bg-color: var(--blue);
+  --description-text-color: var(--black);
+  --review-bg-color: var(--pink);
+  --review-text-color: var(--black);
+  --links-bg-color: var(--blue);
+  --links-text-color: var(--black);
+  --footer-bg-color: var(--violet);
+  --footer-text-color: var(--white);
+
+--bg-color: #1e1e1e;
+--text-color: #fff;
+--article-bg-color: #5f0dee;
+--column-count: 12;
+--column-size: 1fr;
+--item-span: 1;
+*/
