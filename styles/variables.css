@@ -4,28 +4,27 @@
 */
 
 :root {
-  --background-color: #000028;  /* задаёт фон страницы*/
-  --site-padding: 10px;   /* устанавливает основные отступы между элементами*/
-  --page-background: url('../images/cover-image-dark.png'); /* Фоновая Картинка */
+  --background-color: #000028; /* задаёт фон страницы*/
+  --site-padding: 10px; /* устанавливает основные отступы между элементами*/
+  --page-background: url("../images/cover-image-dark.png"); /* Фоновая Картинка */
 
-  --text-font-family: 'IBM Plex mono', monospace;  /* основной шрифт, изменён sans-serif на monospace */
-  --site-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);  /* размер  шрифта заголовка */
-  --site-title-color: #DB00FF;  /* цвет заголовков шапки и подвала */
-  --site-title-line-height: 83%;  /* высота строки заголовка */
+  --text-font-family: "IBM Plex mono", monospace; /* основной шрифт, изменён sans-serif на monospace */
+  --site-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер  шрифта заголовка */
+  --site-title-color: #db00ff; /* цвет заголовков шапки и подвала */
+  --site-title-line-height: 83%; /* высота строки заголовка */
 
-  --button-text-color: #FF0070;  /* цвет текста кнопок отличается в темах от цвета границы */
-  --button-border-color: #FF0070;  /* цвет границы кнопок отличается в темах от текста кнопок */
-  --button-border-color-hover: #FF007066;  /* цвет границы кнопки при наведении */
+  --button-text-color: #ff0070; /* цвет текста кнопок отличается в темах от цвета границы */
+  --button-border-color: #ff0070; /* цвет границы кнопок отличается в темах от текста кнопок */
+  --button-border-color-hover: #ff007066; /* цвет границы кнопки при наведении */
 
   --title-font-weight: 700; /* толщину начертания заголовков */
-  --section-title-color: #FF0070; /* цвет заголовков секций */
-  --accent-color: #FF0070;  /* фон заголовков карточек и теней*/
-  --text-size: 1.125rem;    /* Размер шрифта */
-  --text-color: #F1B2CE;  /* цвет основного текста */
-  --text-font-weight: 400;  /* толщину начертания шрифта текста карточек */
+  --section-title-color: #ff0070; /* цвет заголовков секций */
+  --accent-color: #ff0070; /* фон заголовков карточек и теней*/
+  --text-size: 1.125rem; /* Размер шрифта */
+  --text-color: #f1b2ce; /* цвет основного текста */
+  --text-font-weight: 400; /* толщину начертания шрифта текста карточек */
   --text-line-height: 23.4px; /* высота строки текста */
-  --title-color: #000028;   /* цвет заголовков карточек и аннотации*/
-  --section-columns: 1fr;    /* количество столбцов элементов */
-  --cards-weight: 1;          /* ширина столбцов элементов */
+  --title-color: #000028; /* цвет заголовков карточек и аннотации*/
+  --section-columns: 1fr; /* количество столбцов элементов */
+  --cards-weight: 1; /* ширина столбцов элементов */
 }
-
