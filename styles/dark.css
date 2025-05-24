@@ -23,12 +23,15 @@
 
 }
 
+  /* Стилизация необходима. 
+  Если убрать из dark.css, тогда ломается разметка при автовыборе темы. prefers-color-scheme: light скрывает элемент из тёмной темы.
+  https://disk.yandex.ru/i/r5o4xAJ3rXYUpQ
+
+  Если убрать grid из style.css, тогда ломается разметка при автовыборе тёмной темы, так как значение не задано.
+  https://disk.yandex.ru/i/xfnZe6qPZNDLhg
+  */
 .theme-dark .bulb {
   display: grid;
  }
  
-
-.theme-dark .bulb::after {
- display: inline-block;
-}
-
+  /* Исправлено, удалены стили псевдоэлемента*/

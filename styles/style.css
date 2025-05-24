@@ -7,7 +7,7 @@ html {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
   /* За основную выбрана тёмная тема, Mobile-first */
-  font-family: var(--text-font-family, sans-serif);
+  font-family: var(--text-font-family, monospace);
   background-color: var(--background-color, #000028);
   background-image: var(--page-background, '../images/cover-image-dark.png');
   background-size: cover;
@@ -15,7 +15,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: inherit;
-  z-index: -2;
+ /*  Исправлено. удалён z-index */
   font-size: var(--text-size, 1.125rem);
   line-height: var(--text-line-height, 23.4px);
 }
@@ -71,7 +71,7 @@ html {
 /* header 3-х строчная сетка */
 .header {
   display: grid;
- /*  position: relative; */
+  min-height: 668px;  /* Исправлено. добавлена минимальная высота */
   grid-template-rows: 1fr min-content 1fr; 
   height: 100%; 
   align-items: center;
@@ -90,9 +90,10 @@ html {
   background-color: transparent;
   text-transform: lowercase;
   width: 70px;
-  height: 26px;
+  height: 26px;   /* спасибо за подсказку - решил оставить, иначе сильно усложняется разметка */
   align-items: flex-end;
   justify-content: center;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -166,7 +167,7 @@ html {
   text-decoration: none;
   border: 1px solid transparent;
   color: var(--text-color, #F1B2CE);
-  text-shadow: 2px 1px 0 var(--accent-color, #FF0070)
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070) /* исправлено, изменены параметры тени*/
 }
 
 .link:hover {
@@ -197,6 +198,7 @@ html {
 .footer {
   display: grid;
   position: relative;
+  min-height: 668px;  /* Исправлено. добавлена минимальная высота */
   height: 100%; 
   align-items: center;
   justify-items: center;

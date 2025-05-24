@@ -6,10 +6,9 @@
 :root {
   --background-color: #000028;  /* задаёт фон страницы*/
   --site-padding: 10px;   /* устанавливает основные отступы между элементами*/
-  /* --bulb-shift: 38px;     позиционирование декоративного эл-та */
   --page-background: url('../images/cover-image-dark.png'); /* Фоновая Картинка */
 
-  --text-font-family: 'IBM Plex mono', sans-serif;  /* основной шрифт */
+  --text-font-family: 'IBM Plex mono', monospace;  /* основной шрифт, изменён sans-serif на monospace */
   --site-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);  /* размер  шрифта заголовка */
   --site-title-color: #DB00FF;  /* цвет заголовков шапки и подвала */
   --site-title-line-height: 83%;  /* высота строки заголовка */

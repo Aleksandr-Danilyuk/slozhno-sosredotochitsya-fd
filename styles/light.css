@@ -26,9 +26,7 @@
   display: none;
 }
 
-.theme-light .bulb::after {
-  display: none;
-}
+/* Исправлено, удалены стили сокрытия псевдоэлемента*/
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -48,7 +46,6 @@
     display: none;
   }
 
-  .bulb::after {
-    display: none;
-  }
+  /* Исправлено, удалены стили сокрытия псевдоэлемента*/
+  
 }
