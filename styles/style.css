@@ -223,8 +223,8 @@ html {
   :root {
     --site-padding: 20px;
     --site-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --section-columns: repeat(3, 1fr);
-    --cards-weight: span 2;
+    --section-columns: 1fr 2fr;
+    --cards-weight: span 1;
   }
 
   .main {
@@ -241,7 +241,7 @@ html {
   }
 
   .section__wide {
-    --cards-weight: span 3;
+    --cards-weight: span 2;
   }
 
   .image__sunset {
@@ -281,8 +281,14 @@ html {
 }
 
 @media (min-width: 1024px) {
+  :root {
+    --section-columns: repeat(3, 1fr);
+    --cards-weight: span 2;
+  }
+
   .section__wide {
-    grid-template-columns: repeat(3, 1fr);
+    --cards-weight: span 3;
+    grid-template-columns: var(--section-columns);
     grid-auto-flow: row;
   }
 
