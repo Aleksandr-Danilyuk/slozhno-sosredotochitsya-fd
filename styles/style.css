@@ -224,10 +224,6 @@ html {
     --cards-weight: span 2;
   }
 
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .main {
     padding: 60px var(--site-padding, 20px);
     gap: 80px;
